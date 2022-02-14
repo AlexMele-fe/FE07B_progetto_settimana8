@@ -17,6 +17,7 @@ class FristUser implements Smartphone {
     //modificatori di accesso sulle proprietà 
     public numerohiamate: number;
     public credito: number;
+   
     // dichiarazione del costruttore 
     constructor(_credito: number, _numerochiamate: number) {
         this.credito = _credito;
@@ -30,8 +31,8 @@ class FristUser implements Smartphone {
     }
     //implementazione metodo chiamata
     chiamata(credito: number, minutichiamata: number): void {
-        credito = 40;
-        minutichiamata = 10;
+        this.credito =credito;
+        this.credito += minutichiamata;
     }
     //implementazione metodo numero404(return)
     numero404(): number {
@@ -39,7 +40,7 @@ class FristUser implements Smartphone {
     }
     //implementazione metodo getNumeroChiamata(return)
     getNumeroChimate(): number {
-        return 1
+        
     }
     //implementazione metodo azzeraChiamate
     azzeraChiamate(): void {
@@ -60,6 +61,3 @@ valore carica disponibile -> metodo
 'numero chiamate: -> metodo' */
 
 //seconda classe e terza classe sono IDENTICHE alla prima 
-class SecondUser implements Smartphone {
-
-}
